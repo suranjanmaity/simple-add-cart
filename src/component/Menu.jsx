@@ -19,7 +19,7 @@ let Menu = () =>{
                         </div>
                         <div>
                             <h3>Qty:</h3>
-                            <input type="number" onChange={(e)=>{
+                            <input type="number" step="0.01" onChange={(e)=>{
                                 setQuantity(e.target.value);
                                 console.log(e.target.value);
                             }}/>

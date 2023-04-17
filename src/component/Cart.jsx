@@ -12,7 +12,7 @@ let Cart = () =>{
             ">
 
             {cartItems.map((val)=>{
-                grandTotal+=parseInt(val.quantity)*val.price;
+                grandTotal+=parseFloat(val.quantity)*val.price;
                 return(
                     <div>
                         <li key={val.name} className="
@@ -31,7 +31,7 @@ let Cart = () =>{
                         <div className="
                         flex justify-center w-1/3
                         ">
-                            {parseInt(val.quantity)*val.price}
+                            {parseFloat(val.quantity)*val.price}
                         </div>
                     </li>
                     </div>

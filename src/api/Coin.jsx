@@ -27,7 +27,7 @@ let Coin = (props) =>{
         setCartItems(cartItems.map((value)=>{
             if(value.name === name){
                 flag = true;
-                value.quantity=parseInt(value.quantity)+parseInt(quantity);
+                value.quantity=parseFloat(value.quantity)+parseFloat(quantity);
             }
             return value;
         }))
